@@ -181,18 +181,18 @@
         \begin{center}
         \begin{tikzpicture}[scale=.6]
             % Convex set of density matrices
-            \filldraw[fill=tubsGray!20,very thick] (0,0) -- (2,0.5) -- (3,2.5) .. controls (2.8,4.5) .. (1,5)
             -- (-1,4) -- (-1.75,2) -- cycle;
-            \draw (.8,2.5) node {$\DensityMatrices$};
+            \filldraw[fill=tubsGray!20, very thick, rotate=30] (1, 2) ellipse (3.2 and 2.2);
+            \draw (.2,2.2) node {$\DensityMatrices$};
 
             % Subspace of $k$-body operators
-            \draw (8,-0.5) node[below] {$\kbOp[2]$} -- (8,5.5);
+            \draw (8,-.74) node[below] {$\kbOp[2]$} -- (8,5.2);
 
             % Set or representable density matrices
-            \draw[very thick,color=tubsRed] (8,0) -- node[left=5pt]{$\PkbOp[2](\DensityMatrices)$} (8,5);
+            \draw[very thick,color=tubsRed] (8,-.28) -- node[left=5pt]{$\PkbOp[2](\DensityMatrices)$} (8,4.74);
 
-            \draw[dashed] (1,5) -- (8,5);
-            \draw[dashed] (0,0) -- (8,0);
+            \draw[dashed] (.7,4.74) -- (8,4.74);
+            \draw[dashed] (-1,-.28) -- (8,-.28);
         \end{tikzpicture}
         \end{center}
     }
@@ -308,18 +308,18 @@
     \begin{figure}
     \begin{tikzpicture}[scale=.6]
         % Convex set of density matrices
-        \filldraw[fill=gray!20,very thick] (0,0) -- (2,0.5) -- (3,2.5) .. controls (3.2,4.5) .. (1,5)
         -- (-1,4) -- (-1.75,2) -- cycle;
-        \draw (.8,2.5) node {$\DensityMatrices$};
+        \filldraw[fill=tubsGray!20, very thick, rotate=30] (1, 2) ellipse (3.2 and 2.2);
+        \draw (.2,2.2) node {$\DensityMatrices$};
 
         % Subspace of $k$-body operators
-        \draw (8,-0.5) node[below] {$\kbOp$} -- (8,5.5);
+        \draw (8,-.74) node[below] {$\kbOp[2]$} -- (8,5.2);
 
-        \draw[dashed,very thin] (1,5) -- (8,5);
-        \draw[dashed] (0,0) -- (8,0);
+        \draw[dashed] (.7,4.74) -- (8,4.74);
+        \draw[dashed] (-1,-.28) -- (8,-.28);
 
         % visualize basis
-        \draw[Stealth-Stealth, color=red, very thick] (8,2) -- node[left, near end]{$\HSbasis$} (8,0) -- (6,0);
+        \draw[Stealth-Stealth, color=tubsRed, very thick] (8,1.72) -- node[left, near end]{$\HSbasis$} (8,-.28) -- (6,-.28);
     \end{tikzpicture}
 \end{figure}
 \end{frame}
