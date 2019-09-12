@@ -3,6 +3,9 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 
+\usepackage{dsfont}
+\newcommand{\one}{\mathds{1}}
+
 \usetheme[%
   %nexus,%        Nexus Fonts benutzen
   %lnum,%         Versalziffern verwenden
@@ -12,7 +15,7 @@
   colorhead,%    Farbig hinterlegte Kopfleiste
   colorfoot,%    Farbig hinterlegt Fußleiste auf Titelseite
   colorblocks,%   Blöcke Farbig hinterlegen
-  %nopagenum,%    Keine Seitennumer in Fußzeile
+  nopagenum,%    Keine Seitennumer in Fußzeile
   %totalpages,%    Angabe der Gesamtseitenzahl in Fußzeile
   nodate,%       Kein Datum in Fußleiste
   %tocinheader,%   Inhaltsverzeichnis in Kopfleiste
@@ -55,7 +58,6 @@
 \newcommand{\imag}{\mathrm{i}}
 \newcommand{\CAR}[1]{{\ensuremath{\IC[c,c^*]}}}
 \newcommand{\CARabs}[1]{{\ensuremath{\mathfrak{A}(#1)}}}
-\newcommand{\one}{\mathbb{1}}
 \newcommand{\N}{\mathbf{n}}
 \newcommand{\C}{\mathbf{c}}
 \newcommand{\Cd}{\C^*}
@@ -103,7 +105,7 @@
 \end{frame}
 
 \section{Motivation: The Representability Problem}
-\subsection{Quantum Systems in Theoretical Chemistry}
+\subsection{Quantum systems in theoretical chemistry}
 \frame{\sectionpage}
 
 \begin{frame}{Molecules in Quantum chemistry}
@@ -142,13 +144,13 @@
         \end{equation}
     \end{block}
     \begin{itemize}
-        \item<2-> \textbf{Observe}: For $2$-body Hamiltonians $\Hamiltonian$ the variation over
+        \item<2-> \textbf{Observation}: For $2$-body Hamiltonians $\Hamiltonian$ the variation over
         $\DensityMatrices$ is very inefficient:
         \begin{itemize}
-            \item<3-> General density matrix $\rho$ contains ``too much'' information,
+            \item<3-> a general density matrix $\rho$ contains ``too much'' information,
             \item<3-> we only need expectation values of $2$-body operators.
         \end{itemize}
-      \item<4-> \textbf{Idea}: Replace $\rho$ by its \emph{2-body-reduction} $\PkbOp[2](\rho)$.
+      \item<4-> \textbf{Idea}: Replace $\rho$ by its \emph{2-body-reduction} $\PkbOp[2](\rho)$ \parencite{Husimi1940}.
     \end{itemize}
 \end{frame}
 
@@ -172,8 +174,8 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{The Representability Problem}
-    \begin{block}{Representability Problem (for $\PkbOp[2](\DensityMatrices)$)}
+\begin{frame}{The representability problem}
+    \begin{block}{Representability problem (for $\PkbOp[2](\DensityMatrices)$)}
         Find a \emph{computationally efficient} characterization of
         $\PkbOp[2](\DensityMatrices)$.
     \end{block}
@@ -199,7 +201,7 @@
 \end{frame}
 \begin{frame}{The dual problem: representability conditions}
   \begin{theorem}[\cite{Garrod1964, Kummer1967}]
-    For $r\in\kbOp[2]$ with $\tr(r)=1$ the following conditions are equivalent:
+    For $r=r^*\in\kbOp[2]$ with $\tr(r)=1$ the following conditions are equivalent:
     \begin{enumerate}
       \item $r\in \PkbOp[2](\DensityMatrices)$, i.e. $r$ is \emph{representable},
       \item for all $\xi\in\kbOp[2]$ with $\xi\ge 0$ we have $\langle r,\xi\rangle_\HS\ge 0$.
@@ -208,28 +210,35 @@
   \begin{itemize}
     \item Elements of $\mathcal{R}_2:=\left\{\xi\in\kbOp[2]\mid\xi\ge 0
       \right\}$ are called \emph{representability conditions}.
-    \item They provide \emph{necessary} conditions for representability.
-    \item Characterizing $\mathcal{R}_2$ is called the \emph{dual} representability problem.
+    \item \textbf{Examples}:
+      \begin{itemize}
+        \item GPQ conditions $\xi=r^*r$ with $r\in\kbOp[1]$,
+        \item $T_1$/$T_2$ conditions $\xi=\{r^*,r\}$ for $r\in\kbOp[3]$.
+      \end{itemize}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Geometric interpretation}
   \begin{itemize}
-    \item Representability conditions = \emph{supporting hyperplanes} of $\PkbOp[2](\DensityMatrices)$.
-  \end{itemize}
-  \begin{center}
-  \begin{tikzpicture}[scale=.6]
-      % Convex set of reduced density matrices
-      \filldraw[fill=tubsGray!20,very thick] (0,0) -- (2,0.5) -- (3,2.5) .. controls (2.8,4.5) .. (1,5)
-      -- (-1,4) -- (-1.75,2) -- cycle;
-      \draw (.8,2.5) node {$\PkbOp[2](\DensityMatrices)$};
+    \item Representability conditions = \emph{separating hyperplanes} of $\PkbOp[2](\DensityMatrices)$.
+    \begin{center}
+    \begin{tikzpicture}[scale=.5]
+        % Convex set of reduced density matrices
+        \filldraw[fill=tubsGray!20,very thick] (0,0) -- (2,0.5) -- (3,2.5) .. controls (2.8,4.5) .. (1,5)
+        -- (-1,4) -- (-1.75,2) -- cycle;
+        \draw (.8,2.5) node {$\PkbOp[2](\DensityMatrices)$};
 
-      % Some representability conditions
-      \draw[very thick,color=tubsRed] (1.5,-1) node[below] {$\xi_1^\perp$} -- (4.2,3.8);
-      \draw[very thick,color=tubsRed] (4.5,1.5) node[below] {$\xi_2^\perp$} -- (1.8,6);
-      \draw[very thick,color=tubsRed] (-2,5.2) node[left] {$\xi_3^\perp$} -- (3.2, 5.2);
-  \end{tikzpicture}
-  \end{center}
+        % Some representability conditions
+        \draw[very thick,color=tubsRed] (1.5,-1) node[below] {$\xi_1^\perp$} -- (4.2,3.8);
+        \draw[very thick,color=tubsRed] (4.5,1.5) node[below] {$\xi_2^\perp$} -- (1.8,6);
+        \draw[very thick,color=tubsRed] (-2,5.2) node[left] {$\xi_3^\perp$} -- (3.2, 5.2);
+    \end{tikzpicture}
+    \end{center}
+    \item<2-> \textbf{Example:} $\Hamiltonian\in\kbOp[2]$ and
+      $E\le E_0(\Hamiltonian)$, then $\Hamiltonian-E\in\mathcal{R}_2$.
+    \item<3-> \textbf{However:} Approximating $\PkbOp[2](\DensityMatrices)$
+      uniformly like this is NP-hard \parencite{Liu2006}.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Lower bound methods}
@@ -241,28 +250,32 @@
       \label{1fe38fbd}
     \end{equation}
   \end{corollary}
-  \begin{itemize}
+  \visible<2->{\begin{itemize}
     \item \textbf{Open Question}: Given a particular $\Hamiltonian\in\kbOp[2]$,
       how find $\mathcal{X}\subseteq\mathcal{R}_2$ s.t.
       \begin{enumerate}
         \item the variation \eqref{1fe38fbd} can be computed efficiently and
         \item the error in \eqref{1fe38fbd} is small?
       \end{enumerate}
-  \end{itemize}
+  \end{itemize}}
 \end{frame}
 
-\begin{frame}{Some History of Representability Methods}
+\begin{frame}{Some history of representability methods}
     \begin{itemize}
-        \item \textbf{1940:} Idea to replace $\DensityMatrices$ by $R_2(\DensityMatrices$) (Husimi)
+        \item \textbf{1940:} Idea to replace $\DensityMatrices$ by $R_2(\DensityMatrices$) (\citeauthor{Husimi1940})
         \item \textbf{1950/60s:} First systematic analysis (Coleman, Coulson, Garrod, Percus, Löwdin, Yang)
         \begin{itemize}
             \item $GPQ$-conditions lead to inaccurate lower bounds
-            \item solved Representability Problem for $R_1(\mathcal{SD}_N)$
+            \item solved representability problem for the $1$-RDM of slater determinants
         \end{itemize}
-        \item \textbf{1978:} $T_1$- and $T_2$-conditions (Erdahl)
-        \item \textbf{2005:} Representability of $R_1(\mathcal{P}_N)$ solved  (Klyachko)
-        \item \textbf{2006:} Highly accurate lower bounds exploiting Erdahls $T_1$- and $T_2$-conditions (Cancés, Lewin, Stoltz)
-        \item \textbf{2012:} Derivation of HF error estimates from $G$- and $P$-condition (Bach, Bretaux, Knörr, Menge)
+        \item \textbf{1978:} $T_1$- and $T_2$-conditions (\citeauthor{Erdahl1978})
+        \item \textbf{2006:} Highly accurate lower bounds by exploiting Erdahls
+          $T_1$- and $T_2$-conditions (\citeauthor{Cances2006})
+        \item \textbf{2008:} Representability problem solved for $1$-RDM of
+          pure states (Klyachko)
+        \item \textbf{2008}: QMA-completeness of $N$-representability of the $2$-RDM (\citeauthor{Liu2006})
+        \item \textbf{2012:} Derivation of Hartree-Fock error estimates from
+          $G$- and $P$-condition (\citeauthor{Bach2012})
     \end{itemize}
 \end{frame}
 
@@ -270,7 +283,7 @@
 \subsection{Goal}
 \begin{frame}{Overview}
 \begin{itemize}
-    \item \textbf{Goal}: Find a more explicit formula for $\pi_k$
+    \item \textbf{Motivation}: Find more explicit formula for $\pi_k$
     \item<3-> \textbf{Approach:} construct an explicit orthonormal basis of $\kbOp$.
     \begin{enumerate}
         \item Choose some (non-orthonormal) basis of $\kbOp$.
@@ -283,28 +296,28 @@
 \subsection{Results}
 \begin{frame}{Main Result}
     \begin{theorem}[\cite{Bach2019}]
-        Let $\dim\HilbertSpace\doteq n<\infty$ and $\varphi_1,\ldots,\varphi_n$ an ONB of $\HilbertSpace$.
-        Then an orthogonal basis of $\HS$ is given by
-        \begin{equation}
-            \HSbasis\doteq\left\{
-              \left.\sum_{L\subseteq K}(-2)^Lc_I^*c_L^*c_Lc_J\;\right|
-            \begin{gathered}
-                I,J,K\subseteq\{1,\ldots,n\}\\\text{ mutually disjoint}
-            \end{gathered}
-            \right\},
-        \end{equation}
-        where for $I=\{i_1<\cdots<i_l\}\subseteq\{1,\ldots,n\}$ we define
-        \begin{align}
-            c_I^*&\doteq c^*(\varphi_{i_1})\cdots c^*(\varphi_{i_l}),&
-            c_I&\doteq\left(c_I^*\right)^*=c(\varphi_{i_l})\cdots c(\varphi_{i_1}).
-        \end{align}
+        Let $\varphi_1,\ldots,\varphi_n$ be an orthonormal basis of $\HilbertSpace$. Then 
+        \begin{enumerate}
+          \item An orthogonal basis of $\HS$ is given by
+            \begin{equation*}
+              \HSbasis\doteq\left\{
+                \left.\sum_{L\subseteq K}(-2)^{\#L}c_I^*c_L^*c_Lc_J\;\right|
+                \begin{gathered}
+                  I,J,K\subseteq\{1,\ldots,n\}\\\text{ mutually disjoint}
+                \end{gathered}
+              \right\}.
+            \end{equation*}
+          \item $\HSbasis\cap\kbOp$ is an orthogonal basis of $\kbOp$ for all $k\in\IN_0$.
+        \end{enumerate}
     \end{theorem}
+    \textbf{Notation:} For $I=\{i_1,\ldots,i_l\}$ with $1\le i_1<\cdots<i_l\le n$, define
+    \begin{align*}
+        c_I^*&\doteq c^*(\varphi_{i_1})\cdots c^*(\varphi_{i_l}),&
+        c_I&\doteq\left(c_I^*\right)^*.
+    \end{align*}
 \end{frame}
 
 \begin{frame}{Main Result: Geometric Interpretation}
-    \begin{corollary}[\cite{Bach2019}]
-        An orthogonal basis of $\kbOp$ is given by $\HSbasis\cap\kbOp$.
-    \end{corollary}
     \begin{figure}
     \begin{tikzpicture}[scale=.6]
         % Convex set of density matrices
@@ -313,7 +326,7 @@
         \draw (.2,2.2) node {$\DensityMatrices$};
 
         % Subspace of $k$-body operators
-        \draw (8,-.74) node[below] {$\kbOp[2]$} -- (8,5.2);
+        \draw (8,-.74) node[below] {$\kbOp$} -- (8,5.2);
 
         \draw[dashed] (.7,4.74) -- (8,4.74);
         \draw[dashed] (-1,-.28) -- (8,-.28);
@@ -324,28 +337,61 @@
 \end{figure}
 \end{frame}
 
-\begin{frame}{Application: Expansion of $\pi_k$}
-  \begin{corollary}
-    Let $a\in L(\FockSpace)$ be particle-number preserving, i.e. $[a,\hat{\IN}]=0$. Then
-    \begin{equation}
-      2^n\pi_1(a)=4d\Gamma(\gamma_a)-2\tr(a)\hat{\IN}-2\tr(\gamma_a)+(n+1)\tr(a).
-    \end{equation}
-  \end{corollary}
-  \textbf{Notation}:
+\begin{frame}{Fourier expansion of $\pi_k$}
   \begin{itemize}
-    \item $\gamma_a\in L(\HilbertSpace)$ denotes the usual 1-RDM of $a$
-    \item $d\Gamma$ denotes the (differential) second quantization, e.g. $\hat{\IN}=d\Gamma(1_\HilbertSpace)$
+    \item How does this help to derive an explicit formula for $\pi_k$?
+      \begin{itemize}
+        \item<2-> Having an explicit orthogonal basis of $\kbOp$, we can expand
+          \begin{equation*}
+            \pi_k(\rho)=\sum_{b\in\HSbasis\cap\kbOp}\frac{\langle b,\rho\rangle}{\langle b,b\rangle}\;b
+          \end{equation*}
+        \item<3-> Since the $b\in\HSbasis$ are normal-ordered, the coefficients
+          $\langle b,\rho\rangle$ can directly be expressed in terms of the 1-, 2-,
+          \ldots, $k$-RDM of $\rho$
+      \end{itemize}
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Ongoing Work}
-  \begin{itemize}
-    \item \textbf{Observe}: Representability conditions $\mathcal{R}_k$ invariant under \emph{Bogoliubov transformations}
-    \item \textbf{Question}: Can we classify rep. conditions modulo Bog. transformations, i.e.
-      \begin{equation*}
-        \mathcal{R}_k/\operatorname{Bog}(\FockSpace)=\;?
-      \end{equation*}
-  \end{itemize}
+\begin{frame}{Fourier expansion of $\pi_1$, $\pi_2$}
+  Let $\rho\in\HS$ with $[\rho,\hat{\IN}]=0$ and $\gamma_\rho$ and
+  $\Gamma_\rho$ its 1- and 2-RDM, respectively. Then
+  \begin{equation*}
+    \begin{aligned}
+      \visible<2->{2^n\,\pi_1(\rho)=&\phantom{+}4d\Gamma(\gamma_\rho)-2\tr(\rho)\hat{\IN}
+        -2\tr(\gamma_\rho)+(n+1)\tr(\rho),\\}
+      \visible<4->{2^n\pi_2(\rho)=&\phantom{+}
+      16d\Gamma(\Gamma_\rho)+4\tr\{\rho\}d\Gamma\left(\one_{\bigwedge^2\HilbertSpace}\right)
+      -16d\Gamma(\gamma_\rho)\hat{\IN}\\
+      &+d\Gamma\left[
+        -2(n\tr\{\rho\}-2\tr\{\gamma_\rho\})\one_\mathfrak{h}
+        +4\left(n-1\right)\gamma_\rho-8\tr_1\Gamma_\rho
+      \right]\\
+      &+ \left[\binom{n}{2}+(n+1)\right]\tr\{\rho\}-2n\tr\{\gamma_\rho\}+4\tr\{\Gamma_\rho\}.}
+    \end{aligned}
+  \end{equation*}
+  \visible<3->{
+    \textbf{Notation:} $d\Gamma$ denotes the (differential) second quantization, i.e.
+    \begin{equation*}
+      d\Gamma\left(\left|\varphi\rangle\langle\psi\right|\right)=c^*(\varphi)c(\psi),
+      \quad \forall\varphi,\psi\in\FockSpace.
+    \end{equation*}
+    }
+\end{frame}
+
+\begin{frame}{Summary}
+  \begin{enumerate}
+    \item Geometric view on representability:
+      \begin{itemize}
+        \item Reducing density matrices as orthogonal projection in the
+          Hilbert-Schmidt sense.
+        \item The representability problem amounts to characterize a compact, convex set.
+        \item Representability conditions as separating hyperplanes.
+      \end{itemize}
+    \item $\pi_k(\rho)$ can be expressed in terms of the usual RDMs
+      \begin{itemize}
+        \item \textbf{Open problem:} explicit formula for $k>2$?
+      \end{itemize}
+  \end{enumerate}
 \end{frame}
 
 \begin{frame}
@@ -396,15 +442,16 @@
     \end{itemize}
 \end{frame}
 
-\subsection{Current Research}
-\begin{frame}{Current Research}
-    \begin{enumerate}
-        \item Characterize $\pi_k(\DensityMatrices)\subseteq\kbOp$ using the ONB $\HSbasis\cap\kbOp$
-        \item Identify classical representability conditions as boundary conditions
-        \item Obtain new representability conditions
-        \item Study action of Bogoliubov transformations on representability conditions
-    \end{enumerate}
+\begin{frame}{Ongoing work}
+  \begin{itemize}
+    \item \textbf{Observation}: Representability conditions $\mathcal{R}_k$ invariant under \emph{Bogoliubov transformations}
+    \item \textbf{Question}: Can we classify representability conditions modulo Bogoliubov transformations, i.e.
+      \begin{equation*}
+        \mathcal{R}_k/\operatorname{Bog}(\FockSpace)=\;?
+      \end{equation*}
+  \end{itemize}
 \end{frame}
+
 
 \begin{frame}{Possible Application}
     \begin{itemize}
