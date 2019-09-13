@@ -1,0 +1,510 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Altunbulak2008}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=d9eb129dd42c1d15be0bff8c0d54cd7f}{%
+           family={Altunbulak},
+           familyi={A\bibinitperiod},
+           given={Murat},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=febef77e6961bb9cbc43fe772ef0c79d}{%
+           family={Klyachko},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4110f768ae4880825f2694c4825e40a}
+      \strng{fullhash}{b4110f768ae4880825f2694c4825e40a}
+      \strng{bibnamehash}{b4110f768ae4880825f2694c4825e40a}
+      \strng{authorbibnamehash}{b4110f768ae4880825f2694c4825e40a}
+      \strng{authornamehash}{b4110f768ae4880825f2694c4825e40a}
+      \strng{authorfullhash}{b4110f768ae4880825f2694c4825e40a}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By the Pauli exclusion principle, no quantum state can be occupied by more than one electron. One can state this as a constraint on the one electron density matrix that bounds its eigenvalues by 1. Shortly after its discovery, the Pauli principle was replaced by anti-symmetry of the multi-electron wave function. In this paper we solve a longstanding problem about the impact of this replacement on the one electron density matrix, that goes far beyond the original Pauli principle. Our approach uses Berenstein and Sjamaar's theorem on the restriction of an adjoint orbit onto a subgroup, and allows us to treat any type of permutational symmetry.}
+      \field{annotation}{The Pauli principle, that no quantum state is occupied by more than one electron, is implemented by the anti-symmetry of the many-particle wave function. This, however, imposes additional constraints on the 1-RDM than the original Pauli principle. This work solves the long-standing problem about the impact of this replacement and is based on the Berenstein-Sjamaar theorem, a result in Lie Group theory on adjoint orbits. Section 5 provides an algorithm for computing complete representability conditions for fixed rank r (i.e. dimension of the 1-particle Hilbert space) and carried out for r {<}= 10 in Section 6. In order to gain some first understanding on the theoretical foundations of this approach, it seems feasible to 1. Understand Examples 1 and 2 of Section 2 2. Gain some basic understanding on the basic notions of theorem 1 (Berenstein-Sjamaar)}
+      \field{issn}{0010-3616}
+      \field{journaltitle}{Communications in Mathematical Physics}
+      \field{month}{9}
+      \field{number}{2}
+      \field{title}{{The Pauli Principle Revisited}}
+      \field{volume}{282}
+      \field{year}{2008}
+      \field{pages}{287\bibrangedash 322}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1007/s00220-008-0552-z
+      \endverb
+      \verb{file}
+      \verb :home/rauch/Documents/math/library/Altunbulak, Klyachko - 2008 - The Pauli Principle Revisited.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00220-008-0552-z
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00220-008-0552-z
+      \endverb
+    \endentry
+    \entry{Bach2012}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=34e650a9edadd633302d7d328f99f2db}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c07f56b7ead95a235ae53b1a4d34be07}{%
+           family={Kn{ö}rr},
+           familyi={K\bibinitperiod},
+           given={Hans\bibnamedelima Konrad},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=93bf20a80421cde1211cbae0822bf85a}{%
+           family={Menge},
+           familyi={M\bibinitperiod},
+           given={Edmund},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b4c105aa0a67090fb0472bf57075b944}
+      \strng{fullhash}{b4c105aa0a67090fb0472bf57075b944}
+      \strng{bibnamehash}{b4c105aa0a67090fb0472bf57075b944}
+      \strng{authorbibnamehash}{b4c105aa0a67090fb0472bf57075b944}
+      \strng{authornamehash}{b4c105aa0a67090fb0472bf57075b944}
+      \strng{authorfullhash}{b4c105aa0a67090fb0472bf57075b944}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is shown in this paper that the G-Condition and the P-Condition from representability imply the fermion correlation estimate from [1] which, in turn, is known to yield a nontrivial bound on the accuracy of the Hartree-Fock approximation for large Coulomb systems.}
+      \field{journaltitle}{Documenta Mathematica}
+      \field{month}{3}
+      \field{number}{14}
+      \field{title}{{Fermion Correlation Inequalities derived from G- and P-Conditions}}
+      \field{volume}{17}
+      \field{year}{2012}
+      \field{pages}{451\bibrangedash 481}
+      \range{pages}{31}
+      \verb{file}
+      \verb :home/rauch/Documents/Projects/math/Mendeley Library/Bach, Kn{\"{o}}rr, Menge/Bach, Kn{\"{o}}rr, Menge - 2012 - Fermion Correlation Inequalities derived from G- and P-Conditions(3).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1203.3086
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1203.3086
+      \endverb
+    \endentry
+    \entry{Bach2019}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=34e650a9edadd633302d7d328f99f2db}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e5305c25e7a03187f46df4663147309e}{%
+           family={Rauch},
+           familyi={R\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \strng{fullhash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \strng{bibnamehash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \strng{authorbibnamehash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \strng{authornamehash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \strng{authorfullhash}{2b641f95f4c5a2e2c97942924eeb3f7e}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The reduced k-particle density matrix of a density matrix on finite-dimensional, fermion Fock space can be defined as the image under the orthogonal projection in the Hilbert-Schmidt geometry onto the space of k-body observables. A proper understanding of this projection is therefore intimately related to the representability problem, a long-standing open problem in computational quantum chemistry. Given an orthonormal basis in the finite-dimensional one-particle Hilbert space, we explicitly construct an orthonormal basis of the space of Fock space operators which restricts to an orthonormal basis of the space of k-body operators for all k.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{2469-9926}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{{Orthogonalization of fermion k-body operators and representability}}
+      \field{volume}{99}
+      \field{year}{2019}
+      \field{pages}{042109}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.99.042109
+      \endverb
+      \verb{eprint}
+      \verb 1807.05299
+      \endverb
+      \verb{file}
+      \verb :home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Bach, Rauch - 2019 - Orthogonalization of fermion k-body operators and representability.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.99.042109
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.99.042109
+      \endverb
+    \endentry
+    \entry{Cances2006}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=c1c181a795d854d4d20631dfa310b10e}{%
+           family={Canc{è}s},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9bd15b007874a8fe165faa1778dc6b4c}{%
+           family={Stoltz},
+           familyi={S\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f01bc73458238cc7e9d7a5515a7f1229}{%
+           family={Lewin},
+           familyi={L\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \strng{fullhash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \strng{bibnamehash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \strng{authorbibnamehash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \strng{authornamehash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \strng{authorfullhash}{115b20dd37d70cbd4fbfd93eeabcc92b}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{The authors consider the 2-RDM formulation of the variational ground state energy problem in quantum chemistry. They then consider a dual problem, in which the variation occurs over the the dual cone C* of the cone C of 2-RDMs. An algorithm is presented for solving the dual problem, where C* is replaced by an approximative cone generated by a finite set of (classical) representability conditions. Numerical results for some molecules are presented, which are comparable to Full CI computations.}
+      \field{journaltitle}{Journal of Chemical Physics}
+      \field{title}{{The electronic ground-state energy problem: A new reduced density matrix approach}}
+      \field{volume}{125}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1063/1.2222358
+      \endverb
+      \verb{file}
+      \verb :home/rauch/Documents/Projects/math/Mendeley Library/Canc{\`{e}}s, Stoltz, Lewin/Canc{\`{e}}s, Stoltz, Lewin - 2006 - The electronic ground-state energy problem A new reduced density matrix approach.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Coleman2000}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=130fa586a599d3fadb4e7b7d50039f9f}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi John\bibnamedelimb (Albert\bibnamedelima John)},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=3ef329e68807083a5a4bca3a3c3b229d}{%
+           family={Yukalov},
+           familyi={Y\bibinitperiod},
+           given={V.\bibnamedelimi I.},
+           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8e386874d7687cbb31724a14e53e5005}
+      \strng{fullhash}{8e386874d7687cbb31724a14e53e5005}
+      \strng{bibnamehash}{8e386874d7687cbb31724a14e53e5005}
+      \strng{authorbibnamehash}{8e386874d7687cbb31724a14e53e5005}
+      \strng{authornamehash}{8e386874d7687cbb31724a14e53e5005}
+      \strng{authorfullhash}{8e386874d7687cbb31724a14e53e5005}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{1. Basic properties -- 2. N-Representability -- 3. Correlation -- 4. Generalized AGP -- 5. Boson Systems -- 6. Fermion Systems -- 7. Coulson's Challenge.}
+      \field{annotation}{This book seems one of the newer text books on the topic of reduced density matrix theory.}
+      \field{isbn}{9783540671480}
+      \field{title}{{Reduced density matrices : Coulson's challenge}}
+      \field{year}{2000}
+      \field{pages}{282}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://www.springer.com/de/book/9783540671480
+      \endverb
+      \verb{url}
+      \verb https://www.springer.com/de/book/9783540671480
+      \endverb
+    \endentry
+    \entry{Erdahl1978}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=5991e20b5e3bd975e6c99d48a16c4607}{%
+           family={Erdahl},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \strng{fullhash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \strng{bibnamehash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \strng{authorbibnamehash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \strng{authornamehash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \strng{authorfullhash}{5991e20b5e3bd975e6c99d48a16c4607}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We survey the present status of the representability problem. We introduce in the last section a new class of representability conditions.}
+      \field{issn}{0020-7608}
+      \field{journaltitle}{International Journal of Quantum Chemistry}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{{Representability}}
+      \field{volume}{13}
+      \field{year}{1978}
+      \field{pages}{697\bibrangedash 718}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1002/qua.560130603
+      \endverb
+      \verb{file}
+      \verb :home/rauch/Documents/Projects/math/Mendeley Library/Erdahl/Erdahl - 1978 - Representability.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Garrod1964}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=1cfb15a0c5c5775c285b8cede8cd7eb3}{%
+           family={Garrod},
+           familyi={G\bibinitperiod},
+           given={Claude},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=67ceb2471ce9a53e7a7bc7da9c42f456}{%
+           family={Percus},
+           familyi={P\bibinitperiod},
+           given={Jerome\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{565db09c0494425258eb4a9a469229ec}
+      \strng{fullhash}{565db09c0494425258eb4a9a469229ec}
+      \strng{bibnamehash}{565db09c0494425258eb4a9a469229ec}
+      \strng{authorbibnamehash}{565db09c0494425258eb4a9a469229ec}
+      \strng{authornamehash}{565db09c0494425258eb4a9a469229ec}
+      \strng{authorfullhash}{565db09c0494425258eb4a9a469229ec}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A variational method is presented which is applicable to N‐particle boson or fermion systems with two‐body interactions. For these systems the energy may be expressed in terms of the two‐particle density matrix: $\Gamma$(1, 2 | 1′, 2′)=($\Psi$ |a2+a1+a1′a2′| $\Psi$). In order to have the variational equation: $\delta$E/$\delta$$\Gamma$ = 0 yield the correct ground‐state density matrix one must restrict $\Gamma$ to the set of density matrices which are actually derivable from N‐particle boson (or fermion) systems. Subsidiary conditions are presented which are necessary and sufficient to insure that $\Gamma$ is so derivable. These conditions are of a form which render them unsuited for practical application. However the following necessary (but not sufficient) conditions are shown by some applications to yield good results: It is proven that if $\Gamma$(1, 2 | 1′, 2′) and $\gamma$(1 | 1′) are the two‐particle and one‐particle density matrices of an N‐particle system [normalized by tr $\Gamma$ = N(N − 1) and tr$\gamma$ = N] then the associated operator: G(1,2 | 1′,2′)=$\delta$(1−1′)$\gamma$(2 | 2′)+$\sigma$...}
+      \field{issn}{0022-2488}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{{Reduction of the N‐Particle Variational Problem}}
+      \field{volume}{5}
+      \field{year}{1964}
+      \field{pages}{1756\bibrangedash 1776}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1063/1.1704098
+      \endverb
+      \verb{file}
+      \verb :home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Garrod, Percus - 1964 - Reduction of the N‐Particle Variational Problem.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://aip.scitation.org/doi/10.1063/1.1704098
+      \endverb
+      \verb{url}
+      \verb http://aip.scitation.org/doi/10.1063/1.1704098
+      \endverb
+    \endentry
+    \entry{Husimi1940}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8ab2b8ac7878297ae5e3adf0842c10ca}{%
+           family={Husimi},
+           familyi={H\bibinitperiod},
+           given={Kodi},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {THE PHYSICAL SOCIETY OF JAPAN , The Mathematical Society of Japan}%
+      }
+      \strng{namehash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \strng{fullhash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \strng{bibnamehash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \strng{authorbibnamehash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \strng{authornamehash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \strng{authorfullhash}{8ab2b8ac7878297ae5e3adf0842c10ca}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0370-1239}
+      \field{journaltitle}{Proceedings of the Physico-Mathematical Society of Japan. 3rd Series}
+      \field{number}{4}
+      \field{title}{{Some Formal Properties of the Density Matrix}}
+      \field{volume}{22}
+      \field{year}{1940}
+      \field{pages}{264\bibrangedash 314}
+      \range{pages}{51}
+      \verb{doi}
+      \verb JST.Journalarchive/ppmsj1919/22.264
+      \endverb
+      \verb{file}
+      \verb :home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Husimi - 1940 - Some Formal Properties of the Density Matrix.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstage.jst.go.jp/article/ppmsj1919/22/4/22{\_}4{\_}264/{\_}article/-char/ja/
+      \endverb
+      \verb{url}
+      \verb https://www.jstage.jst.go.jp/article/ppmsj1919/22/4/22%7B%5C_%7D4%7B%5C_%7D264/%7B%5C_%7Darticle/-char/ja/
+      \endverb
+    \endentry
+    \entry{Kummer1967}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2fb4fde02c90a5fcb51793003ce18dfd}{%
+           family={Kummer},
+           familyi={K\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \strng{fullhash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \strng{bibnamehash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \strng{authorbibnamehash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \strng{authornamehash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \strng{authorfullhash}{2fb4fde02c90a5fcb51793003ce18dfd}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{{\#} Summary This paper gives the (probably) first rigorous proof of a theorem of Garrod and Percus stating that the cone of N -representable p-RDMs is given by an (infinite) intersection of half spaces. Moreover, it is proved that the closure R k (DM) (in a suitable topology) coincides with the convex closure of certain extreme points in R k (DM). Finally, the N -representability problem in infinite dimension is reduced to the corresponding problem in finite dimensions. {\#} Follow-Up Questions * In which sense can the infinite-dimensional case be reduced to the finite- dimensional case?}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{number}{10}
+      \field{title}{{n-Representability Problem for Reduced Density Matrices}}
+      \field{volume}{8}
+      \field{year}{1967}
+      \field{pages}{2063\bibrangedash 2081}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1063/1.1705122
+      \endverb
+      \verb{file}
+      \verb :home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kummer - 1967 - n-Representability Problem for Reduced Density Matrices.pdf:pdf
+      \endverb
+      \keyw{Representability}
+    \endentry
+    \entry{Liu2006}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=5da0ddf1e099d7c8e2b3e138c0b66c21}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yi-Kai},
+           giveni={Y\bibinithyphendelim K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5ed363070ed27652729320bec34cfd8f}{%
+           family={Christandl},
+           familyi={C\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b1b40a59b721fbc27f4e9daba0872482}{%
+           family={Verstraete},
+           familyi={V\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \strng{fullhash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \strng{bibnamehash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \strng{authorbibnamehash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \strng{authornamehash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \strng{authorfullhash}{89b3277b4275ac29dbfe448c64b7ba59}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the computational complexity of the N-representability problem in quantum chemistry. We show that this problem is QMA-complete, which is the quantum generalization of NP-complete. Our proof uses a simple mapping from spin systems to fermionic systems, as well as a convex optimization technique that reduces the problem of finding ground states to N-representability.}
+      \field{annotation}{This paper shows that computational complexity of the N-representability problem is QMA-complete (i.e. it is in QMA and any problem in QMA can be efficiently reduced to this problem). Coloquially, this means that this problem is intractible even on a quantum computer. The idea is that the N-representability problem is (computationally) equivalent to the computation of the GSE of 2-local Hamiltonians of spins, which is known (?!) to be QMA-hard. The final step then is to show that the N-representability problem is in QMA, i.e. that there exists an efficient quantum verifier that can check a possible solution of the problem. Moreover, it is shown that the pure N-representability problem is in QMA(k), which is conjectured to be strictly larger than QMA. It is therefore plausible to assume that the pure N-representability problem is harder than usual N-representability.}
+      \field{eprintclass}{quant-ph}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0031-9007}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{3}
+      \field{number}{11}
+      \field{title}{{Quantum Computational Complexity of the N-Representability Problem: QMA Complete}}
+      \field{volume}{98}
+      \field{year}{2007}
+      \field{pages}{110503}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.98.110503
+      \endverb
+      \verb{eprint}
+      \verb 0609125
+      \endverb
+      \verb{file}
+      \verb :home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Liu, Christandl, Verstraete - 2007 - Quantum Computational Complexity of the N-Representability Problem QMA Complete.pdf:pdf;:home/rauch/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Liu, Christandl, Verstraete - 2007 - Quantum Computational Complexity of the N-Representability Problem QMA Complete(2).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.98.110503
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1103/PhysRevLett.98.110503
+      \endverb
+      \keyw{Representability}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
